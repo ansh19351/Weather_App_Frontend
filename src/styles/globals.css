@@ -1,22 +1,35 @@
 body {
-  font-family: Tahoma, "Trebuchet MS", sans-serif
+  font-family: Tahoma, "Trebuchet MS", sans-serif;
+  text-align: center;
+  background-color: rgb(229, 250, 244);
 }
 table {
   border-collapse: collapse;
   width: 100%;
+  text-align: center;
+  
 }
 
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  text-align: center;
+  border: 3px solid black;
 }
 
 tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-
+form
+{
+  width: 60%;
+  margin: auto;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
 input[type=email], input[type=password], input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -24,15 +37,23 @@ input[type=email], input[type=password], input[type=text] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: larger;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
 }
 button {
-  background-color: #04AA6D;
+  background-color: rgb(146, 88, 245);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+  border-radius: 5px;
 }
 button:hover {
   opacity: 0.8;

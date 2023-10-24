@@ -14,8 +14,9 @@ export default function AddCity() {
         event.preventDefault();
         try
         {
-            const response = await axios.post(`${process.env.SERVER_URL}/admin/add`,{'name':city},{withCredentials: true, headers:{"Content-Type":"application/json"},});
-        }
+            const res = await axios.post(`${process.env.SERVER_URL}/admin/add`,{'name':city},{withCredentials: true, headers:{"Content-Type":"application/json"},});
+            
+          }
         catch(error)
         {
             alert(`Error entering the city ${error}`);
@@ -23,7 +24,7 @@ export default function AddCity() {
     };
     return (
         <form onSubmit={handleSubmit}>
-          <label htmlFor="city">Add the city:</label>
+          <label htmlFor="city">Name:</label>
           <input
             type="text"
             id="city"

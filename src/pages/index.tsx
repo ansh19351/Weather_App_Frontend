@@ -4,7 +4,6 @@ import axios from 'axios';
 
 export default function BooksList() {
   const [cities, setCities] = useState([]);
-  const [data, setData] = useState(null);
   useEffect(() => {
     fetch(`${process.env.SERVER_URL}/user/weather`)
       .then((response) => response.json())
